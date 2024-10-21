@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCE 190: Owen Henderson </title>
+    <title>CSCE 190: [Owen Henderson]</title>
     <style>
         body {
             background-color: lightblue; /* Light blue background for the page */
@@ -40,10 +40,13 @@
             transform: scale(1.05); /* Slight zoom on hover */
         }
 
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        .project img {
+            width: 300px; /* Fixed width for images */
+            height: 300px; /* Fixed height for images */
+            margin: 10px;
+            border: 2px solid rgb(126, 14, 201); /* Border color */
+            display: block;
+            margin: auto; /* Center the image */
         }
 
         h3 {
@@ -54,15 +57,17 @@
         p {
             font-size: 14px;
             color: #555;
+            text-align: center; /* Center text in paragraphs */
+            margin: 15px; /* Margin for paragraphs */
         }
 
         a {
-            text-decoration: none;
-            color: inherit;
+            text-decoration: none; /* Remove underline from all links */
+            color: purple; /* Change link color to purple */
         }
 
         a:hover h3 {
-            color: #005bb5; /* Darker blue on hover */
+            color: #005bb5; /* Darker blue on hover for headings */
         }
     </style>
 </head>
@@ -85,6 +90,15 @@
                 <h3>Affinity Diagram</h3>
                 <img src="images/Affinity Diagram2.png" alt="Affinity Diagram showing data collection methods">
                 <p>Affinity Diagram of app with "Ways to collect data", "Ways to display data", "Possible hurdles", "Basic features", and "Platform/UI".</p>
+            </a>
+        </section>
+
+        <!-- Sketches Assignment -->
+        <section class="project">
+            <a href="files/Sketches.pdf">
+                <h3>Sketches</h3>
+                <img src="images/Sketches-1.png" alt="Sketches illustrating design ideas">
+                <p>Brief description about the sketches.</p>
             </a>
         </section>
     </div>
