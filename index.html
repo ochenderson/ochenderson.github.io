@@ -6,7 +6,7 @@
     <title>CSCE 190: [Owen Henderson]</title>
     <style>
         body {
-            background-color: lightblue; /* Light blue background for the page */
+            background-color: lightblue;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -21,7 +21,7 @@
         .projects {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center the project sections */
+            justify-content: center;
             padding: 20px;
         }
 
@@ -29,24 +29,22 @@
             width: 30%;
             margin: 15px;
             padding: 20px;
-            background: white; /* White background for project sections */
-            border-radius: 25%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.2s;
         }
 
         .project:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
+            transform: scale(1.05);
         }
 
         .project img {
-            width: 300px; /* Fixed width for images */
-            height: 300px; /* Fixed height for images */
+            width: 300px;
+            height: 300px;
             margin: 10px;
-            border: 2px solid rgb(126, 14, 201); /* Border color */
-            display: block;
-            margin: auto; /* Center the image */
+            border: 2px solid rgb(126, 14, 201);
         }
 
         h3 {
@@ -57,42 +55,52 @@
         p {
             font-size: 14px;
             color: #555;
-            text-align: center; /* Center text in paragraphs */
-            margin: 15px; /* Margin for paragraphs */
+            text-align: center;
+            margin: 15px;
         }
 
         a {
-            text-decoration: none; /* Remove underline from all links */
-            color: purple; /* Change link color to purple */
+            text-decoration: none;
+            color: purple;
         }
 
         a:hover h3 {
-            color: #005bb5; /* Darker blue on hover for headings */
+            color: #005bb5;
         }
-        .about{
-            display:flex;
-            flex-wrap:wrap;
-            margin-right: 100px;
-            margin-left: 100px;
-            justify-content: center;
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 40px auto;
         }
-        .about p {
-            width:50%;
-            text-align: center;
-            margin: auto;
-            line-height: 125%;
-        }
+
         .about img {
             width: 150px;
             height: 200px;
-            border-radius: 25%;
+            border-radius: 15px;
             border: 2px solid rgb(126, 14, 201);
-}
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            text-align: center;
+            line-height: 1.5;
+            color: #333;
+            max-width: 600px;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
     <h1>[Owen Henderson]</h1>
-    
+
     <div class="projects">
         <!-- Problem Statement Assignment -->
         <section class="project">
@@ -121,21 +129,21 @@
             </a>
         </section>
 
-        <!--Paper Prototype Assignment-->
+        <!-- Paper Prototype Assignment -->
         <section class="project">
-             <a href="https://youtu.be/noQQpX1zrdA"><h3> Paper Prototype [Video Attached] </h3></a>
-             <a href="https://youtu.be/noQQpX1zrdA"><img src="images/Prototype Cover.png"></a>
-            <p> Paper prototype displaying the functionality of the dining hall app using multiple screens. </p>
-    </section>
-        <!-- About Me -->
-         <h2> About Me </h2>
-             <div class="about">
-             <img src="images/ProfilePic.png">
-             <p>
-                Hello! My name is Owen Henderson. I’m a student at the University of South Carolina studying Computer Science. I’m passionate
-                about creating things that are useful and everything music. My goal is to expand my knowledge and grow as a human while having a good time!
-             </p>
-             </div>
-         </div>
-    </body>
+            <a href="https://youtu.be/noQQpX1zrdA">
+                <h3>Paper Prototype [Video Attached]</h3>
+                <img src="images/Prototype Cover.png" alt="Paper Prototype Cover Image">
+                <p>Paper prototype displaying the functionality of the dining hall app using multiple screens.</p>
+            </a>
+        </section>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about">
+        <img src="images/ProfilePic.png" alt="Profile Picture">
+        <p>Hello! My name is Owen Henderson. I’m a student at the University of South Carolina studying Computer Science. I’m passionate
+           about creating things that are useful and everything music. My goal is to expand my knowledge and grow as a human while having a good time!</p>
+    </div>
+</body>
 </html>
