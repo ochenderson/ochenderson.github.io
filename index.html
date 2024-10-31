@@ -90,7 +90,7 @@
             margin-bottom: 20px;
         }
 
-        .about p {
+        .about p, .contact p, .skills p {
             text-align: center;
             line-height: 1.5;
             color: #333;
@@ -98,34 +98,15 @@
             font-size: 16px;
         }
 
-        /* Styles for the Contact and Skills section container */
-        .contact-skills-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-        }
-
-        .contact, .skills {
-            flex: 1;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
         .contact h3, .skills h3 {
-            color: #0073e6;
-            text-align: center;
             margin-bottom: 15px;
+            color: #0073e6;
         }
 
-        .contact p, .skills p {
-            text-align: center;
+        .skills p {
             font-size: 16px;
-            line-height: 1.5;
-            color: #333;
+            text-align: left;
+            padding: 0 20px;
         }
     </style>
 </head>
@@ -177,26 +158,23 @@
            about creating things that are useful and everything music. My goal is to expand my knowledge and grow as a human while having a good time!</p>
     </div>
 
-    <!-- Contact and Skills Sections Side by Side -->
-    <div class="contact-skills-container">
-        <!-- Contact Me Section -->
-        <div class="contact">
-            <h3>Contact Me!</h3>
-            <p>Email: och1@email.sc.edu</p>
-            <p>GitHub: <a href="https://github.com/ochenderson/ochenderson.github.io" target="_blank">ochenderson.github.io</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/owen-henderson-777b04334/" target="_blank">Owen Henderson</a></p>
-        </div>
+    <!-- Contact Me Section -->
+    <div class="section contact">
+        <h3>Contact Me!</h3>
+        <p>Email: och1@email.sc.edu</p>
+        <p>GitHub: <a href="https://github.com/ochenderson/ochenderson.github.io" target="_blank">ochenderson.github.io</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/owen-henderson-777b04334/" target="_blank">Owen Henderson</a></p>
+    </div>
 
-        <!-- Skills Section -->
-        <div class="skills">
-            <h3>Skills</h3>
-            <p>
-                - Java<br>
-                - HTML<br>
-                - CSS<br>
-                - Git
-            </p>
-        </div>
+    <!-- Skills Section -->
+    <div class="section skills">
+        <h3>Skills</h3>
+        <p>
+            - Java<br>
+            - HTML<br>
+            - CSS<br>
+            - Git
+        </p>
     </div>
 </body>
 </html>
