@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Owen Henderson's CSCE 190 portfolio, showcasing projects, skills, and contact information.">
     <title>CSCE 190: [Owen Henderson]</title>
     <style>
         body {
@@ -10,6 +11,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        nav {
+            background: #0073e6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         h1 {
@@ -33,7 +51,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.2s;
+            transition: transform 0.3s ease-in-out;
         }
 
         .project:hover {
@@ -68,7 +86,6 @@
             color: #005bb5;
         }
 
-        /* Shared styles for "About Me", "Contact Me", and "Skills" sections */
         .section {
             display: flex;
             flex-direction: column;
@@ -108,12 +125,24 @@
             text-align: left;
             padding: 0 20px;
         }
+
+        .Resume-Link {
+            text-align: center;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
     <h1>[Owen Henderson]</h1>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <!-- Problem Statement Assignment -->
         <section class="project">
             <a href="files/190 Problem Statement PDF.pdf">
@@ -152,14 +181,14 @@
     </div>
 
     <!-- About Me Section -->
-    <div class="section about">
+    <div class="section about" id="about">
         <img src="images/ProfilePic.png" alt="Profile Picture">
         <p>Hello! My name is Owen Henderson. I’m a student at the University of South Carolina studying Computer Science. I’m passionate
            about creating things that are useful and everything music. My goal is to expand my knowledge and grow as a human while having a good time!</p>
     </div>
 
     <!-- Contact Me Section -->
-    <div class="section contact">
+    <div class="section contact" id="contact">
         <h3>Contact Me!</h3>
         <p>Email: och1@email.sc.edu</p>
         <p>GitHub: <a href="https://github.com/ochenderson/ochenderson.github.io" target="_blank">ochenderson.github.io</a></p>
@@ -167,7 +196,7 @@
     </div>
 
     <!-- Skills Section -->
-    <div class="section skills">
+    <div class="section skills" id="skills">
         <h3>Skills</h3>
         <p>
             - Java<br>
@@ -176,8 +205,9 @@
             - Git<br>
         </p>
     </div>
+
+    <div class="Resume-Link">
+        <p><b>Resume:</b> <a href="files/Owen Henderson Resume 2024.pdf" target="_blank">Download here</a></p>
+    </div>
 </body>
 </html>
-    <div class = "Resume Link">
-            <p><b>Resume:</b><a href="Owen Henderson Resume 2024.pdf">Download here</a></p>
-    </div>
